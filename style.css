@@ -1,0 +1,906 @@
+@font-face {
+    font-family: 'SeaweedScript';
+    src: url('./assets/fonts/SeaweedScript-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Caveat';
+    src: url('./assets/fonts/Caveat.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./assets/fonts/Montserrat.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    color: white;
+}
+
+:root {
+    --firstColor:#376655;
+    --firstBisColor:#3A6E5C;
+    --secondColor: #184849;
+    --secondBisColor : #225F62;
+    --thirdColor: #FFD700;
+    --thirdBisColor: #c0a117;
+    --fourthColor: #FFFFFF;
+    --fifthColor:#162C33;
+}
+
+h1 {
+    font-family: 'SeaweedScript';
+    font-size: 3.5rem;
+    color: var(--thirdBisColor);
+    text-shadow: 4px 4px 4px black;
+    height: fit-content;
+}
+
+h2 {
+    font-family: 'SeaweedScript';
+    font-size: 2.5rem;
+    color: var(--thirdBisColor);
+    text-shadow: 4px 4px 4px black;
+    height: fit-content;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h2 i {
+    font-size: 2.5rem;
+    color: var(--thirdBisColor);
+}
+
+h3 {
+    font-family: 'Caveat';
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    height: fit-content;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+hr {
+    width: 50%;
+    margin: 5% auto;
+    border-color: var(--thirdBisColor)
+}
+
+p {
+    line-height: 2;
+}
+
+body {
+    background-image: url('./assets/banniere_mnta_accueil.jpg');
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: #162C33;
+}
+.responsive {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.flexWrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+.gap {
+    gap: 20px;
+}
+.justifyBetween {
+    justify-content: space-between;
+}
+
+.justifyEnd {
+    justify-content: flex-end;
+}
+
+.justifyCenter {
+    justify-content: center;
+}
+
+.alignCenter {
+    align-items: center;
+}
+
+.alignEnd {
+    align-items: flex-end;
+}
+
+.contentCenter {
+    align-content: center;
+}
+
+.alignStart {
+    align-items: flex-start;
+}
+
+.alignBetween {
+    align-content: space-between;
+}
+
+.directionColumn {
+    flex-direction: column;
+}
+
+.bouton {
+    background-color: var(--secondColor);
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: var(--fourthColor);
+    height: fit-content;
+    width: fit-content;
+    font-weight: 500;
+    border: 3px solid var(--fifthColor);
+    transition: transform 400ms;
+    font-family: 'Caveat';
+    font-size: 1.5rem;
+}
+
+.boutonImportant {
+    background-color: var(--thirdColor);
+    color: black;
+    border: 3px solid var(--thirdBisColor);
+    font-weight: 700;
+}
+
+.boutonImportant i {
+    color: black;
+}
+
+.boutonRond {
+    background-color: var(--fifthColor);
+    color: black;
+    font-weight: 700;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 400ms;
+    border: 3px solid white;
+}
+
+.bouton:hover {
+    transform: scale(1.10);
+}
+
+.boutonRond:hover {
+    transform: scale(1.10);
+}
+
+input:focus {
+    background-color: var(--thirdBisColor);
+}
+
+.padding {
+    padding: 0 5%;
+}
+
+.paddingSection {
+    padding: 0 5% 3% 5%;
+}
+
+.retourHaut {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* HEADER */
+header {
+    background-color: var(--firstColor);
+    width: 90%;
+    height: 10vh;
+    box-shadow: 0px 5px 3px var(--firstColor);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 0 5%;
+}
+
+.inputSearch {
+    width: 40%;
+    position: relative;
+}
+
+.inputSearch input {
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    border: 3px solid var(--secondColor);
+    outline: none;
+    padding-left: 20px;
+    color: black;
+}
+
+.inputSearch i {
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    color: var(--secondColor);
+}
+
+.lienLogo {
+    width: 20%;
+    font-family: 'SeaweedScript';
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--thirdBisColor);
+    text-shadow: 4px 4px 4px black;
+}
+.imageLogo {
+    width: 80px;
+}
+.lienLogo p{
+    font-family: 'SeaweedScript';
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--thirdBisColor);
+    text-shadow: 4px 4px 4px black;
+}
+
+.boutonMenu {
+    gap: 16px;
+}
+
+/* HERO */
+.heroAccueil {
+    height: 90vh;
+}
+
+.accroche {
+    width: 75%;
+    height: 35%;
+    background-image: url('./assets/fond-parchemin.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.accroche p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+    text-shadow: 0px 0px 5px white;
+    height: fit-content;
+    font-family: 'Caveat';
+    font-size: 2rem;
+    line-height: 1;
+}
+
+/* SECTION VALEURS */
+.valeurs div {
+    width: 26.6%;
+}
+
+/* SECTION ETALES */
+.etales div {
+    width: 20%;
+}
+
+.etales img {
+    width: 100%;
+    border-radius: 15px;
+    border: 3px solid var(--thirdColor);
+}
+
+/* SECTION NOUVEAU TRESOR */
+.sectionNouveau {
+    width: 50%;
+    margin: auto;
+}
+
+.sectionNouveau img{
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+}
+
+.sectionNouveau>div{
+    width: 60%;
+    position: relative;
+}
+
+.quotes {
+    position: absolute;
+    font-size: 50rem;
+    top: -300px;
+    right: 50px;
+    color: rgba(255, 255, 255, 0.26);
+    font-family: 'Caveat';
+}
+
+.sectionNouveau .bouton {
+    background-color: var(--thirdColor);
+    color: black;
+    border: 5px solid var(--thirdBisColor);
+    width: 400px;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* SECTION TRESORS A LA UNE */
+.tresorsUne article {
+    width: 20%;
+    background-color: var(--firstBisColor);
+    border-radius: 20px;
+    transition: transform 400ms;
+}
+
+.tresorsUne article:hover {
+    transform: scale(1.15);
+}
+
+.tresorsUne article h3{
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.tresorsUne article>img{
+    width:100%;
+    object-fit:cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.tresorsUne article>div{
+    padding: 10px;
+    gap: 15px;
+}
+
+.tagTresor {
+    gap: 10px;
+}
+
+.tagTresor a {
+    font-size: 1.2rem;
+    font-family: 'Caveat';
+    background-color: var(--fifthColor);
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+.montantTresor {
+    width: 100%;
+    text-align: center;
+    color: var(--thirdColor);
+    font-weight: 700;
+}
+
+.evalTresor {
+    width: 100%;
+}
+
+
+
+.evalTresor img{
+    width: 24px;
+    height: 24px;
+}
+
+.actionsTresor {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.actionsTresor .bouton {
+    width: 100px;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--firstColor);
+    padding: 2% 5% 3% 5%;
+    margin-top: 5%;
+    line-height: 1.5;
+}
+
+footer>div {
+    width: 30%;
+    border-left: 1px solid var(--fifthColor);
+    padding-left: 20px;
+}
+
+footer h3 {
+    text-align: left;
+    color: var(--thirdBisColor);
+    font-size: 2rem;
+}
+
+.mentions {
+    background-color: var(--firstColor);
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+/* PAGE TRESOR */
+.tresorBody {
+    background-color: var(--fifthColor);
+    background-image: none;
+}
+
+.heroHamac {
+    height: 50vh;
+    background-image: url('./assets/hero-hamac-mirage.jpg');
+    background-size: 100%;
+    background-position: 50% 65%;
+    background-repeat: no-repeat;
+    background-color: #162C33;
+    margin-bottom: 5%;
+}
+
+.heroHamac .montantTresor {
+    margin-top: 20px;
+    font-size: 2rem;
+    text-shadow: 0px 0px 4px black ;
+}
+
+.heroHamac .montantTresor i {
+    color: var(--thirdColor);
+}
+
+.accrocheTresor {
+    width: 50%;
+    padding: 20px 5% 20px 5%;
+    background-color: var(--fifthColor);
+    border-radius: 50px 50px 0 0;
+}
+
+.galerieTresor img {
+    width: 20%;
+    border-radius: 20px;
+}
+
+.sectionColorRadius {
+    background-color: var(--firstColor);
+    border-radius: 20px;
+    width: 40%;
+}
+
+.infosTresors {
+    height: 50%;
+    gap: 20px;
+    padding: 50px;
+    
+}
+
+.infosTresors p{
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.infosTresors span {
+    color: var(--thirdColor);
+    padding: 10px;
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: 'Caveat';
+    width: 40%;
+    display: inline-block;
+}
+
+.infosTresors .tagTresor a{
+    font-size: 1.25rem;
+}
+
+.descTresors {
+    width: 50%;
+    gap: 15px;
+}
+
+.descTresors h2 {
+    text-align: left;
+    color: var(--thirdColor);
+    width: 80%;
+    margin: 0;
+}
+
+.descTresors img{
+    width: 56px;
+    object-fit: contain;
+}
+
+.evaluationTresors h3 {
+    font-size: 3rem;
+}
+
+.evaluationTresors {
+    height: 50%;
+    gap: 10px;
+    padding: 50px;
+    
+}
+
+.evaluationTresors p{
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.evaluationTresors span {
+    color: var(--thirdBisColor);
+    padding: 10px;
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: 'Caveat';
+    width: 40%;
+    display: inline-block;
+}
+
+/* Affichage tablet */
+@media screen and (max-width:1200px) {
+    /* HEADER */
+    header {
+        height: 200px;
+        position:fixed;
+        gap: 10px;
+        padding: 10px 5%;
+    }
+
+    .lienLogo {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .inputSearch {
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    .inputSearch input {
+        width: 100%;
+    }
+
+    .inputSearch i {
+        position: absolute;
+        top: 10px;
+        right: 8px;
+        color: var(--secondColor);
+    }
+
+    .boutonMenu {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* HERO */
+    .heroAccueil {
+        height: 100vh;
+        background-image: url('./assets/banniere_mnta_accueil.jpg');
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        align-items: center;
+    }
+
+    .accroche {
+        background-image: none;
+        gap: 20px;
+        transform: translateY(50%);
+    }
+
+    /* VALEURS */
+    .valeurs div {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    /* SECTION TRESORS A LA UNE */
+    .tresorsUne article {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    /* SECTION NOUVEAU TRESOR */
+    .sectionNouveau {
+        width: 80%;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .sectionNouveau>div{
+        width: 100%;
+        gap: 30px;
+    }
+
+    .quotes {
+        top: -300px;
+        right: 100px;
+    }
+
+    /* SECTION ETALES */
+    .etales div {
+        width: 100%;
+    }
+
+    /* FOOTER */
+    footer {
+        padding: 30px 0;
+        gap: 30px;
+    }
+
+    footer>div {
+        width: 100%;
+    }
+
+    /* PAGE TRESOR */
+    /*HERO*/
+    .heroHamac {
+        height: 50vh;
+        background-size: cover;
+        background-position: 50% 65%;
+    }
+
+    .accrocheTresor {
+        width: 80%;
+        height: 10vh;
+        position: relative;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+
+    .accrocheTresor .boutonImportant:first-child {
+        position: absolute;
+        bottom: 0;
+        right: 20px;
+    }
+
+    .accrocheTresor .boutonImportant:last-child {
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+    }
+
+    .tresorBody section {
+        gap: 50px;
+        margin-bottom: 50px;;
+    }
+
+    .infosTresors {
+        width: 100%;
+    }
+
+    .infosTresors span{
+        width: 100%;
+        padding: 0;
+    }
+
+    .tagTresor a {
+        display: block;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .descTresors {
+        width: 100%;
+    }
+
+    .evaluationTresors {
+        width: 100%;
+    }
+
+    .evaluationTresors span{
+        width: 100%;
+        padding: 0;
+    }
+
+    .galerieTresor {
+        gap: 30px;
+    }
+
+    .galerieTresor img {
+        width: 45%
+    }
+}
+
+/* Affichage smartphone */
+@media screen and (max-width:575px) {
+    /* GENERAL */
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+    
+    /* BODY */
+    body {
+        background-image: none;
+        background-color: #162C33;
+    }
+
+    /* HEADER */
+    header {
+        height: 200px;
+        position:fixed;
+        gap: 10px;
+        padding: 10px 5%;
+    }
+
+    .lienLogo {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .inputSearch {
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    .inputSearch input {
+        width: 100%;
+    }
+
+    .inputSearch i {
+        position: absolute;
+        top: 10px;
+        right: 8px;
+        color: var(--secondColor);
+    }
+
+    .boutonMenu {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* HERO */
+    .heroAccueil {
+        height: 100vh;
+        background-image: url('./assets/banniere_mnta_accueil.jpg');
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        align-items: center;
+    }
+
+    .accroche {
+        background-image: none;
+        gap: 20px;
+        transform: translateY(50%);
+    }
+
+    /* VALEURS */
+    .valeurs div {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    /* SECTION TRESORS A LA UNE */
+    .tresorsUne article {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    /* SECTION NOUVEAU TRESOR */
+    .sectionNouveau {
+        width: 80%;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .sectionNouveau>div{
+        width: 100%;
+        gap: 30px;
+    }
+
+    .quotes {
+        top: -300px;
+        right: 100px;
+    }
+
+    /* SECTION ETALES */
+    .etales div {
+        width: 100%;
+    }
+
+    /* FOOTER */
+    footer {
+        padding: 30px 0;
+        gap: 30px;
+    }
+
+    footer>div {
+        width: 100%;
+    }
+
+    /* PAGE TRESOR */
+    /*HERO*/
+    .heroHamac {
+        height: 50vh;
+        background-size: cover;
+        background-position: 50% 65%;
+    }
+
+    .accrocheTresor {
+        width: 80%;
+        height: 10vh;
+        position: relative;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+
+    .accrocheTresor .boutonImportant:first-child {
+        position: absolute;
+        bottom: 0;
+        right: 20px;
+    }
+
+    .accrocheTresor .boutonImportant:last-child {
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+    }
+
+    .tresorBody section {
+        gap: 50px;
+        margin-bottom: 50px;;
+    }
+
+    .infosTresors {
+        width: 100%;
+    }
+
+    .infosTresors span{
+        width: 100%;
+        padding: 0;
+    }
+
+    .tagTresor a {
+        display: block;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .descTresors {
+        width: 100%;
+    }
+
+    .evaluationTresors {
+        width: 100%;
+    }
+
+    .evaluationTresors span{
+        width: 100%;
+        padding: 0;
+    }
+
+    .galerieTresor {
+        gap: 30px;
+    }
+
+    .galerieTresor img {
+        width: 45%
+    }
+}
