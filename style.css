@@ -308,7 +308,7 @@ header {
 
 /* SECTION NOUVEAU TRESOR */
 .sectionNouveau {
-    width: 50%;
+    width: 80%;
     margin: auto;
 }
 
@@ -552,19 +552,19 @@ footer h3 {
 @media screen and (max-width:1200px) {
     /* HEADER */
     header {
-        height: 200px;
+        height: 150px;
         position:fixed;
         gap: 10px;
         padding: 10px 5%;
     }
 
     .lienLogo {
-        width: 100%;
+        width: 35%;
         justify-content: center;
     }
     
     .inputSearch {
-        width: 100%;
+        width: 50%;
         position: relative;
         display: flex;
         justify-content: center;
@@ -610,7 +610,7 @@ footer h3 {
 
     /* SECTION TRESORS A LA UNE */
     .tresorsUne article {
-        width: 100%;
+        width: 45%;
         margin-bottom: 30px;
     }
 
@@ -633,7 +633,7 @@ footer h3 {
 
     /* SECTION ETALES */
     .etales div {
-        width: 100%;
+        width: 45%;
     }
 
     /* FOOTER */
@@ -643,7 +643,7 @@ footer h3 {
     }
 
     footer>div {
-        width: 100%;
+        width: 45%;
     }
 
     /* PAGE TRESOR */
@@ -677,11 +677,12 @@ footer h3 {
 
     .tresorBody section {
         gap: 50px;
-        margin-bottom: 50px;;
+        margin-bottom: 50px;
+        justify-content: center;
     }
 
     .infosTresors {
-        width: 100%;
+        width: 60%;
     }
 
     .infosTresors span{
@@ -692,7 +693,6 @@ footer h3 {
     .tagTresor a {
         display: block;
         margin-bottom: 10px;
-        width: 100%;
     }
 
     .descTresors {
@@ -700,11 +700,11 @@ footer h3 {
     }
 
     .evaluationTresors {
-        width: 100%;
+        width: 60%;
     }
 
     .evaluationTresors span{
-        width: 100%;
+        width: 50%;
         padding: 0;
     }
 
